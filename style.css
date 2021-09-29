@@ -1,4 +1,174 @@
-body {
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #2563EB;
+    --dark-grey: #4B5563;
+    --offwhite: #E5E7EB;
+    
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+/** Containter **/
+
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+}
+
+/** Project Span Class **/
+
+.markText {
+    font-size: smaller;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem; 
+    background-color: var(--dark-grey);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+
+/** Links **/
+
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    /* margin-top: 5rem;
+    margin-bottom: 1rem; */
+}
+
+.primary-link {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.secondary-link {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+/** list **/
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 1rem;
+}
+
+
+/** Nav **/
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+/** header **/
+
+.hero {
+    padding: 2rem;
+}
+
+.hero .hero-img {
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--dark-grey);
+}
+
+.inverted-hero-heading {
+    color: var(--primary-color);
+    text-align: center;
+    
+}
+
+
+/** section **/
+
+.section {
+    padding: 2rem;
+}
+.section h1 {
+    text-align: center;  
+}
+
+.ow {
+    background-color: var(--offwhite);
+}
+
+
+/** footer **/
+
+.footer{
+    margin-top: auto;
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+}
+
+
+.footer .link {
+    color: white;
+}
+
+.footer .footer-head{
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer ul{
+    padding-inline-start: 0px;
+}
+
+.list-item-inline .footer-img {
+   min-height: 30px;
+}
